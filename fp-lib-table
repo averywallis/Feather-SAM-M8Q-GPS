@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Feather-SAM-M8Q-GPS)(type KiCad)(uri ${KIPRJMOD}/Feather-SAM-M8Q-GPS.pretty)(options "")(descr ""))
+)

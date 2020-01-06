@@ -1,0 +1,828 @@
+EESchema Schematic File Version 4
+LIBS:Feather-SAM-M8Q-GPS-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_GPS:ublox_SAM-M8Q U1
+U 1 1 5DC61812
+P 6800 2150
+F 0 "U1" H 7300 2550 50  0000 C CNN
+F 1 "ublox_SAM-M8Q" H 7300 2650 50  0000 C CNN
+F 2 "RF_GPS:ublox_SAM-M8Q" H 7300 1700 50  0001 C CNN
+F 3 "https://www.u-blox.com/sites/default/files/SAM-M8Q_DataSheet_%28UBX-16012619%29.pdf" H 6800 2150 50  0001 C CNN
+F 4 "SAM-M8Q-0-10" H 6800 2150 50  0001 C CNN "MPN"
+	1    6800 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5DC70A7F
+P 6750 1400
+F 0 "#PWR03" H 6750 1250 50  0001 C CNN
+F 1 "+3.3V" H 6765 1573 50  0000 C CNN
+F 2 "" H 6750 1400 50  0001 C CNN
+F 3 "" H 6750 1400 50  0001 C CNN
+	1    6750 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1400 6750 1500
+Wire Wire Line
+	6750 1500 6700 1500
+Wire Wire Line
+	6700 1500 6700 1650
+Wire Wire Line
+	6800 1650 6800 1500
+Wire Wire Line
+	6800 1500 6750 1500
+Connection ~ 6750 1500
+Text Label 7050 1450 1    50   ~ 0
+BACKUP
+Wire Wire Line
+	7050 1450 7050 1550
+Wire Wire Line
+	7050 1550 6900 1550
+Wire Wire Line
+	6900 1550 6900 1650
+$Comp
+L Device:C C1
+U 1 1 5DC7173B
+P 5750 1200
+F 0 "C1" H 5865 1246 50  0000 L CNN
+F 1 "1.0uF" H 5865 1155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5788 1050 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/CL21B105KOFNNNG-Samsung-Electro-Mechanics-datasheet-81462187.pdf" H 5750 1200 50  0001 C CNN
+F 4 "CL21B105KOFNNNG" H 5750 1200 50  0001 C CNN "MPN"
+	1    5750 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5DC72E3C
+P 5750 950
+F 0 "#PWR01" H 5750 800 50  0001 C CNN
+F 1 "+3.3V" H 5765 1123 50  0000 C CNN
+F 2 "" H 5750 950 50  0001 C CNN
+F 3 "" H 5750 950 50  0001 C CNN
+	1    5750 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 950  5750 1050
+$Comp
+L power:GND #PWR02
+U 1 1 5DC733B7
+P 5750 1450
+F 0 "#PWR02" H 5750 1200 50  0001 C CNN
+F 1 "GND" H 5755 1277 50  0000 C CNN
+F 2 "" H 5750 1450 50  0001 C CNN
+F 3 "" H 5750 1450 50  0001 C CNN
+	1    5750 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1450 5750 1350
+$Comp
+L power:GND #PWR04
+U 1 1 5DC74113
+P 6800 2800
+F 0 "#PWR04" H 6800 2550 50  0001 C CNN
+F 1 "GND" H 6805 2627 50  0000 C CNN
+F 2 "" H 6800 2800 50  0001 C CNN
+F 3 "" H 6800 2800 50  0001 C CNN
+	1    6800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2800 6800 2650
+$Comp
+L Device:R_US R4
+U 1 1 5DC756D3
+P 7850 2050
+F 0 "R4" V 7900 1950 50  0000 C CNN
+F 1 "470" V 7900 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7890 2040 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/RMCF0805JT470R-Stackpole-Electronics-datasheet-10788263.pdf" H 7850 2050 50  0001 C CNN
+F 4 "RMCF0805JT470R" V 7850 2050 50  0001 C CNN "MPN"
+	1    7850 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 5DC762CA
+P 7850 1950
+F 0 "R3" V 7800 1800 50  0000 C CNN
+F 1 "470" V 7800 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7890 1940 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/RMCF0805JT470R-Stackpole-Electronics-datasheet-10788263.pdf" H 7850 1950 50  0001 C CNN
+F 4 "RMCF0805JT470R" V 7850 1950 50  0001 C CNN "MPN"
+	1    7850 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 1950 7300 1950
+Wire Wire Line
+	7300 2050 7700 2050
+$Comp
+L Device:R_US R2
+U 1 1 5DC76B2B
+P 7750 2350
+F 0 "R2" V 7800 2250 50  0000 C CNN
+F 1 "22" V 7800 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7790 2340 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/RMCF0805FT22R0-Stackpole-Electronics-datasheet-10788263.pdf" H 7750 2350 50  0001 C CNN
+F 4 "RMCF0805FT22R0" V 7750 2350 50  0001 C CNN "MPN"
+	1    7750 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5DC7723A
+P 7750 2250
+F 0 "R1" V 7700 2100 50  0000 C CNN
+F 1 "22" V 7700 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7790 2240 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/RMCF0805FT22R0-Stackpole-Electronics-datasheet-10788263.pdf" H 7750 2250 50  0001 C CNN
+F 4 "RMCF0805FT22R0" V 7750 2250 50  0001 C CNN "MPN"
+	1    7750 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 2250 7600 2250
+Wire Wire Line
+	7600 2350 7300 2350
+Text Label 8750 2050 0    50   ~ 0
+RXI
+Text Label 8750 1950 0    50   ~ 0
+TXO
+$Comp
+L Jumper:SolderJumper_2_Bridged JP3
+U 1 1 5DC78A45
+P 8150 3050
+F 0 "JP3" V 8150 3118 50  0000 L CNN
+F 1 "~" V 8195 3118 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8150 3050 50  0001 C CNN
+F 3 "~" H 8150 3050 50  0001 C CNN
+	1    8150 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP6
+U 1 1 5DC7A06E
+P 8550 3050
+F 0 "JP6" V 8550 3118 50  0000 L CNN
+F 1 "~" V 8595 3118 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 8550 3050 50  0001 C CNN
+F 3 "~" H 8550 3050 50  0001 C CNN
+	1    8550 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5DC7A5D9
+P 8350 3400
+F 0 "#PWR0101" H 8350 3250 50  0001 C CNN
+F 1 "+3.3V" H 8365 3573 50  0000 C CNN
+F 2 "" H 8350 3400 50  0001 C CNN
+F 3 "" H 8350 3400 50  0001 C CNN
+	1    8350 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8150 3200 8150 3300
+Wire Wire Line
+	8150 3300 8350 3300
+Wire Wire Line
+	8350 3300 8350 3400
+Wire Wire Line
+	8550 3200 8550 3300
+Wire Wire Line
+	8550 3300 8350 3300
+Connection ~ 8350 3300
+$Comp
+L Device:R_US R8
+U 1 1 5DC7CD6D
+P 8150 2650
+F 0 "R8" V 8200 2550 50  0000 C CNN
+F 1 "2.2k" V 8200 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8190 2640 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/RMCF0805FT2K20-Stackpole-Electronics-datasheet-10788263.pdf" H 8150 2650 50  0001 C CNN
+F 4 "RMCF0805FT2K20" V 8150 2650 50  0001 C CNN "MPN"
+	1    8150 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R9
+U 1 1 5DC7D510
+P 8550 2650
+F 0 "R9" V 8600 2550 50  0000 C CNN
+F 1 "2.2k" V 8600 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8590 2640 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/RMCF0805FT2K20-Stackpole-Electronics-datasheet-10788263.pdf" H 8550 2650 50  0001 C CNN
+F 4 "RMCF0805FT2K20" V 8550 2650 50  0001 C CNN "MPN"
+	1    8550 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8550 2800 8550 2900
+Wire Wire Line
+	8150 2900 8150 2800
+Text Label 9250 2350 0    50   ~ 0
+SCL
+Text Label 9250 2250 0    50   ~ 0
+SDA
+Wire Wire Line
+	8850 2350 8550 2350
+Wire Wire Line
+	7900 2250 8150 2250
+Wire Wire Line
+	8550 2500 8550 2350
+Connection ~ 8550 2350
+Wire Wire Line
+	8550 2350 7900 2350
+Wire Wire Line
+	8150 2500 8150 2250
+Connection ~ 8150 2250
+Wire Wire Line
+	8150 2250 8850 2250
+Text Label 6100 2050 2    50   ~ 0
+INT
+Wire Wire Line
+	6100 2050 6300 2050
+Text Label 6100 2150 2    50   ~ 0
+PPS
+Wire Wire Line
+	6100 2150 6300 2150
+Text Label 6100 2250 2    50   ~ 0
+~SAFE
+Wire Wire Line
+	6100 2250 6300 2250
+Text Label 6100 2350 2    50   ~ 0
+~RESET
+Wire Wire Line
+	6100 2350 6300 2350
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5DC82CF6
+P 8400 1950
+F 0 "JP4" H 8300 2000 50  0000 C CNN
+F 1 "~" H 8400 2100 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8400 1950 50  0001 C CNN
+F 3 "~" H 8400 1950 50  0001 C CNN
+	1    8400 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5DC8383C
+P 8400 2050
+F 0 "JP5" H 8200 2000 50  0000 C CNN
+F 1 "~" H 8400 1950 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8400 2050 50  0001 C CNN
+F 3 "~" H 8400 2050 50  0001 C CNN
+	1    8400 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 1950 8750 1950
+Wire Wire Line
+	8250 1950 8000 1950
+Wire Wire Line
+	8000 2050 8250 2050
+Wire Wire Line
+	8550 2050 8750 2050
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5DC85A4B
+P 4000 2450
+F 0 "JP1" V 4000 2518 50  0000 L CNN
+F 1 "~" V 4045 2518 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4000 2450 50  0001 C CNN
+F 3 "~" H 4000 2450 50  0001 C CNN
+	1    4000 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP2
+U 1 1 5DC861D0
+P 4600 2450
+F 0 "JP2" V 4600 2518 50  0000 L CNN
+F 1 "~" V 4645 2518 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 4600 2450 50  0001 C CNN
+F 3 "~" H 4600 2450 50  0001 C CNN
+	1    4600 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R6
+U 1 1 5DC86FCD
+P 4000 2950
+F 0 "R6" V 4050 2850 50  0000 C CNN
+F 1 "1k" V 4050 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4040 2940 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/RMCF0805JT1K00-Stackpole-Electronics-datasheet-10788263.pdf" H 4000 2950 50  0001 C CNN
+F 4 "RMCF0805JT1K00" V 4000 2950 50  0001 C CNN "MPN"
+	1    4000 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R7
+U 1 1 5DC87E92
+P 4600 2950
+F 0 "R7" V 4650 2850 50  0000 C CNN
+F 1 "1k" V 4650 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4640 2940 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/RMCF0805JT1K00-Stackpole-Electronics-datasheet-10788263.pdf" H 4600 2950 50  0001 C CNN
+F 4 "RMCF0805JT1K00" V 4600 2950 50  0001 C CNN "MPN"
+	1    4600 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5DC884A1
+P 4000 3400
+F 0 "D2" V 4039 3282 50  0000 R CNN
+F 1 "YELLOW" V 3948 3282 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4000 3400 50  0001 C CNN
+F 3 "~" H 4000 3400 50  0001 C CNN
+	1    4000 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5DC88EE7
+P 4600 3400
+F 0 "D3" V 4639 3282 50  0000 R CNN
+F 1 "RED" V 4548 3282 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4600 3400 50  0001 C CNN
+F 3 "~" H 4600 3400 50  0001 C CNN
+	1    4600 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 2600 4000 2800
+Wire Wire Line
+	4000 3100 4000 3250
+Wire Wire Line
+	4600 2800 4600 2600
+Wire Wire Line
+	4600 3100 4600 3250
+$Comp
+L power:GND #PWR0102
+U 1 1 5DC8B66B
+P 4000 3700
+F 0 "#PWR0102" H 4000 3450 50  0001 C CNN
+F 1 "GND" H 4005 3527 50  0000 C CNN
+F 2 "" H 4000 3700 50  0001 C CNN
+F 3 "" H 4000 3700 50  0001 C CNN
+	1    4000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3700 4000 3550
+$Comp
+L power:GND #PWR0103
+U 1 1 5DC8C4EB
+P 4600 3750
+F 0 "#PWR0103" H 4600 3500 50  0001 C CNN
+F 1 "GND" H 4605 3577 50  0000 C CNN
+F 2 "" H 4600 3750 50  0001 C CNN
+F 3 "" H 4600 3750 50  0001 C CNN
+	1    4600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3750 4600 3550
+Text Label 4000 2150 1    50   ~ 0
+PPS
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5DC8D286
+P 4600 2150
+F 0 "#PWR0104" H 4600 2000 50  0001 C CNN
+F 1 "+3.3V" H 4615 2323 50  0000 C CNN
+F 2 "" H 4600 2150 50  0001 C CNN
+F 3 "" H 4600 2150 50  0001 C CNN
+	1    4600 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2150 4600 2300
+Wire Wire Line
+	4000 2150 4000 2300
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5DC8F9F5
+P 2300 1400
+F 0 "#PWR0105" H 2300 1250 50  0001 C CNN
+F 1 "+3.3V" H 2315 1573 50  0000 C CNN
+F 2 "" H 2300 1400 50  0001 C CNN
+F 3 "" H 2300 1400 50  0001 C CNN
+	1    2300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 5DC903B4
+P 2300 1750
+F 0 "D1" V 2346 1671 50  0000 R CNN
+F 1 "D_Schottky" V 2255 1671 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 2300 1750 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/PMEG4005EJF-Nexperia-datasheet-77992266.pdf" H 2300 1750 50  0001 C CNN
+F 4 "PMEG4005EJF" V 2300 1750 50  0001 C CNN "MPN"
+	1    2300 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 1600 2300 1400
+$Comp
+L Device:R_US R5
+U 1 1 5DC92817
+P 2300 2300
+F 0 "R5" V 2350 2200 50  0000 C CNN
+F 1 "3.3k" V 2350 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2340 2290 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/RMCF0805JT3K30-Stackpole-Electronics-datasheet-10788263.pdf" H 2300 2300 50  0001 C CNN
+F 4 "RMCF0805JT3K30" V 2300 2300 50  0001 C CNN "MPN"
+	1    2300 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 2150 2300 1900
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5DC940B1
+P 2300 3000
+F 0 "BT1" H 2418 3050 50  0000 L CNN
+F 1 "~" H 2418 3005 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Seiko_MS621F" V 2300 3060 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/MS621FE-FL11E-Seiko-datasheet-5320152.pdf" V 2300 3060 50  0001 C CNN
+F 4 "MS621FE-FL11E" H 2300 3000 50  0001 C CNN "MPN"
+	1    2300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5DC94AF9
+P 2750 2950
+F 0 "C2" H 2865 2996 50  0000 L CNN
+F 1 "1.0uF" H 2865 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2788 2800 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/CL21B105KOFNNNG-Samsung-Electro-Mechanics-datasheet-81462187.pdf" H 2750 2950 50  0001 C CNN
+F 4 "CL21B105KOFNNNG" H 2750 2950 50  0001 C CNN "MPN"
+	1    2750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5DC9558E
+P 2300 3250
+F 0 "#PWR0106" H 2300 3000 50  0001 C CNN
+F 1 "GND" H 2305 3077 50  0000 C CNN
+F 2 "" H 2300 3250 50  0001 C CNN
+F 3 "" H 2300 3250 50  0001 C CNN
+	1    2300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5DC95AA0
+P 2750 3250
+F 0 "#PWR0107" H 2750 3000 50  0001 C CNN
+F 1 "GND" H 2755 3077 50  0000 C CNN
+F 2 "" H 2750 3250 50  0001 C CNN
+F 3 "" H 2750 3250 50  0001 C CNN
+	1    2750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3100 2750 3250
+Wire Wire Line
+	2300 3100 2300 3250
+Wire Wire Line
+	2300 2800 2300 2650
+Wire Wire Line
+	2750 2800 2750 2650
+Wire Wire Line
+	2750 2650 2300 2650
+Connection ~ 2300 2650
+Wire Wire Line
+	2300 2650 2300 2450
+$Comp
+L Connector_Generic:Conn_01x12 ~1
+U 1 1 5DCA2C44
+P 4650 4800
+F 0 "~1" H 4730 4746 50  0000 L CNN
+F 1 "~" H 4730 4751 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 4650 4800 50  0001 C CNN
+F 3 "~" H 4650 4800 50  0001 C CNN
+	1    4650 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 ~2
+U 1 1 5DCA37D1
+P 4650 6550
+F 0 "~2" H 4730 6542 50  0000 L CNN
+F 1 "~" H 4730 6496 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 4650 6550 50  0001 C CNN
+F 3 "~" H 4650 6550 50  0001 C CNN
+	1    4650 6550
+	1    0    0    -1  
+$EndComp
+Text Label 4300 4300 2    50   ~ 0
+BAT
+Text Label 4300 4400 2    50   ~ 0
+En
+Text Label 4300 4500 2    50   ~ 0
+USB
+Text Label 4300 4600 2    50   ~ 0
+13
+Text Label 4300 4700 2    50   ~ 0
+12
+Text Label 4300 4800 2    50   ~ 0
+11`
+Text Label 4300 4900 2    50   ~ 0
+10`
+Text Label 4300 5000 2    50   ~ 0
+9`
+Text Label 4300 5100 2    50   ~ 0
+6
+Text Label 4300 5200 2    50   ~ 0
+`5
+Text Label 4300 5300 2    50   ~ 0
+SCL
+Text Label 4300 5400 2    50   ~ 0
+SDA
+Text Label 4300 5850 2    50   ~ 0
+RST
+Text Label 4300 6050 2    50   ~ 0
+ARf
+Text Label 4300 6250 2    50   ~ 0
+A0
+Text Label 4300 6350 2    50   ~ 0
+A1
+Text Label 4300 6450 2    50   ~ 0
+A2
+Text Label 4300 6550 2    50   ~ 0
+A3
+Text Label 4300 6650 2    50   ~ 0
+A4
+Text Label 4300 6750 2    50   ~ 0
+A5
+Text Label 4300 6850 2    50   ~ 0
+SCK
+Text Label 4300 6950 2    50   ~ 0
+MOSI
+Text Label 4300 7050 2    50   ~ 0
+MISO
+Text Label 4300 7150 2    50   ~ 0
+RXI
+Text Label 4300 7250 2    50   ~ 0
+TXO
+Wire Wire Line
+	4300 4300 4450 4300
+Wire Wire Line
+	4450 4400 4300 4400
+Wire Wire Line
+	4300 4500 4450 4500
+Wire Wire Line
+	4450 4600 4300 4600
+Wire Wire Line
+	4300 4700 4450 4700
+Wire Wire Line
+	4450 4800 4300 4800
+Wire Wire Line
+	4300 4900 4450 4900
+Wire Wire Line
+	4450 5000 4300 5000
+Wire Wire Line
+	4300 5100 4450 5100
+Wire Wire Line
+	4450 5200 4300 5200
+Wire Wire Line
+	4300 5300 4450 5300
+Wire Wire Line
+	4450 5400 4300 5400
+Wire Wire Line
+	4300 5850 4450 5850
+Wire Wire Line
+	4450 5950 4300 5950
+Wire Wire Line
+	4300 6050 4450 6050
+Wire Wire Line
+	4450 6150 4300 6150
+Wire Wire Line
+	4300 6250 4450 6250
+Wire Wire Line
+	4450 6350 4300 6350
+Wire Wire Line
+	4300 6450 4450 6450
+Wire Wire Line
+	4450 6550 4300 6550
+Wire Wire Line
+	4300 6650 4450 6650
+Wire Wire Line
+	4450 6750 4300 6750
+Wire Wire Line
+	4300 6850 4450 6850
+Wire Wire Line
+	4450 6950 4300 6950
+Wire Wire Line
+	4300 7050 4450 7050
+Wire Wire Line
+	4450 7150 4300 7150
+Wire Wire Line
+	4300 7250 4450 7250
+Wire Wire Line
+	4450 7350 4300 7350
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 5DCFF591
+P 4300 5950
+F 0 "#PWR0108" H 4300 5800 50  0001 C CNN
+F 1 "+3.3V" V 4315 6078 50  0000 L CNN
+F 2 "" H 4300 5950 50  0001 C CNN
+F 3 "" H 4300 5950 50  0001 C CNN
+	1    4300 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5DD006AE
+P 4300 7350
+F 0 "#PWR0109" H 4300 7100 50  0001 C CNN
+F 1 "GND" V 4305 7222 50  0000 R CNN
+F 2 "" H 4300 7350 50  0001 C CNN
+F 3 "" H 4300 7350 50  0001 C CNN
+	1    4300 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5DD01D4C
+P 4300 6150
+F 0 "#PWR0110" H 4300 5900 50  0001 C CNN
+F 1 "GND" V 4305 6022 50  0000 R CNN
+F 2 "" H 4300 6150 50  0001 C CNN
+F 3 "" H 4300 6150 50  0001 C CNN
+	1    4300 6150
+	0    1    1    0   
+$EndComp
+Text Label 2950 2650 0    50   ~ 0
+BACKUP
+Wire Wire Line
+	2950 2650 2750 2650
+Connection ~ 2750 2650
+$Comp
+L Connector_Generic:Conn_01x01 TX1
+U 1 1 5DD2DDFE
+P 9550 1700
+F 0 "TX1" H 9630 1742 50  0000 L CNN
+F 1 "TX" H 9630 1651 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9550 1700 50  0001 C CNN
+F 3 "~" H 9550 1700 50  0001 C CNN
+	1    9550 1700
+	1    0    0    -1  
+$EndComp
+Text Label 9250 1700 2    50   ~ 0
+TX
+Wire Wire Line
+	9250 1700 9350 1700
+$Comp
+L Connector_Generic:Conn_01x01 RX1
+U 1 1 5DD3C805
+P 9550 1900
+F 0 "RX1" H 9630 1942 50  0000 L CNN
+F 1 "RX" H 9630 1851 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9550 1900 50  0001 C CNN
+F 3 "~" H 9550 1900 50  0001 C CNN
+	1    9550 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1900 9350 1900
+Text Label 9250 1900 2    50   ~ 0
+RX
+Text Label 8150 2050 0    50   ~ 0
+TX
+Text Label 8100 1950 0    50   ~ 0
+RX
+$Comp
+L Jumper:SolderJumper_2_Bridged JP8
+U 1 1 5DD57362
+P 9000 2350
+F 0 "JP8" H 9000 2250 50  0000 C CNN
+F 1 "~" V 9045 2418 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 9000 2350 50  0001 C CNN
+F 3 "~" H 9000 2350 50  0001 C CNN
+	1    9000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP7
+U 1 1 5DD576B1
+P 9000 2250
+F 0 "JP7" H 9000 2363 50  0000 C CNN
+F 1 "~" V 9045 2318 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 9000 2250 50  0001 C CNN
+F 3 "~" H 9000 2250 50  0001 C CNN
+	1    9000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2250 9150 2250
+Wire Wire Line
+	9150 2350 9250 2350
+Text Label 8650 2250 0    50   ~ 0
+SDA2
+Text Label 8650 2350 0    50   ~ 0
+SCL2
+$Comp
+L Connector_Generic:Conn_01x01 TX2
+U 1 1 5DD6151F
+P 9600 2800
+F 0 "TX2" H 9680 2842 50  0000 L CNN
+F 1 "SDA" H 9680 2751 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 2800 50  0001 C CNN
+F 3 "~" H 9600 2800 50  0001 C CNN
+	1    9600 2800
+	1    0    0    -1  
+$EndComp
+Text Label 9300 2800 2    50   ~ 0
+SDA2
+Wire Wire Line
+	9300 2800 9400 2800
+$Comp
+L Connector_Generic:Conn_01x01 RX2
+U 1 1 5DD61527
+P 9600 3000
+F 0 "RX2" H 9680 3042 50  0000 L CNN
+F 1 "SCL" H 9680 2951 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3000 50  0001 C CNN
+F 3 "~" H 9600 3000 50  0001 C CNN
+	1    9600 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3000 9400 3000
+Text Label 9300 3000 2    50   ~ 0
+SCL2
+Text Label 9300 3550 2    50   ~ 0
+~SAFE
+Wire Wire Line
+	9300 3550 9400 3550
+$Comp
+L Connector_Generic:Conn_01x01 RX3
+U 1 1 5DC9E0D1
+P 9600 3750
+F 0 "RX3" H 9680 3792 50  0000 L CNN
+F 1 "INT" H 9680 3701 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3750 50  0001 C CNN
+F 3 "~" H 9600 3750 50  0001 C CNN
+	1    9600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 3750 9400 3750
+Text Label 9300 3750 2    50   ~ 0
+INT
+Text Label 9300 3950 2    50   ~ 0
+~RESET
+Wire Wire Line
+	9300 3950 9400 3950
+$Comp
+L Connector_Generic:Conn_01x01 TX4
+U 1 1 5DCA0F10
+P 9600 3950
+F 0 "TX4" H 9680 3992 50  0000 L CNN
+F 1 "~RST" H 9680 3901 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3950 50  0001 C CNN
+F 3 "~" H 9600 3950 50  0001 C CNN
+	1    9600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 TX3
+U 1 1 5DC9E0C9
+P 9600 3550
+F 0 "TX3" H 9680 3592 50  0000 L CNN
+F 1 "~SAFE" H 9680 3501 50  0000 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3550 50  0001 C CNN
+F 3 "~" H 9600 3550 50  0001 C CNN
+	1    9600 3550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
