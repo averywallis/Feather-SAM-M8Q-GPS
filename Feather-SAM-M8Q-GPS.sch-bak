@@ -356,7 +356,8 @@ P 4000 3400
 F 0 "D2" V 4039 3282 50  0000 R CNN
 F 1 "YELLOW" V 3948 3282 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 4000 3400 50  0001 C CNN
-F 3 "~" H 4000 3400 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/LTST-S220YKT-Lite-On-datasheet-75153.pdf" H 4000 3400 50  0001 C CNN
+F 4 "LTST-S220YKT" V 4000 3400 50  0001 C CNN "MPN"
 	1    4000 3400
 	0    -1   -1   0   
 $EndComp
@@ -367,7 +368,8 @@ P 4600 3400
 F 0 "D3" V 4639 3282 50  0000 R CNN
 F 1 "RED" V 4548 3282 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 4600 3400 50  0001 C CNN
-F 3 "~" H 4600 3400 50  0001 C CNN
+F 3 "https://datasheet.octopart.com/LTST-S220EKT-Lite-On-datasheet-99162.pdf" H 4600 3400 50  0001 C CNN
+F 4 "LTST-S220EKT" V 4600 3400 50  0001 C CNN "MPN"
 	1    4600 3400
 	0    -1   -1   0   
 $EndComp
@@ -692,7 +694,7 @@ U 1 1 5DD2DDFE
 P 9550 1700
 F 0 "TX1" H 9630 1742 50  0000 L CNN
 F 1 "TX" H 9630 1651 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9550 1700 50  0001 C CNN
+F 2 "~Connector_Pin:Pin_D1.0mm_L10.0mm" H 9550 1700 50  0001 C CNN
 F 3 "~" H 9550 1700 50  0001 C CNN
 	1    9550 1700
 	1    0    0    -1  
@@ -707,7 +709,7 @@ U 1 1 5DD3C805
 P 9550 1900
 F 0 "RX1" H 9630 1942 50  0000 L CNN
 F 1 "RX" H 9630 1851 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9550 1900 50  0001 C CNN
+F 2 "~Connector_Pin:Pin_D1.0mm_L10.0mm" H 9550 1900 50  0001 C CNN
 F 3 "~" H 9550 1900 50  0001 C CNN
 	1    9550 1900
 	1    0    0    -1  
@@ -746,17 +748,13 @@ Wire Wire Line
 	9250 2250 9150 2250
 Wire Wire Line
 	9150 2350 9250 2350
-Text Label 8650 2250 0    50   ~ 0
-SDA2
-Text Label 8650 2350 0    50   ~ 0
-SCL2
 $Comp
 L Connector_Generic:Conn_01x01 TX2
 U 1 1 5DD6151F
 P 9600 2800
 F 0 "TX2" H 9680 2842 50  0000 L CNN
 F 1 "SDA" H 9680 2751 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 2800 50  0001 C CNN
+F 2 "~Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 2800 50  0001 C CNN
 F 3 "~" H 9600 2800 50  0001 C CNN
 	1    9600 2800
 	1    0    0    -1  
@@ -771,7 +769,7 @@ U 1 1 5DD61527
 P 9600 3000
 F 0 "RX2" H 9680 3042 50  0000 L CNN
 F 1 "SCL" H 9680 2951 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3000 50  0001 C CNN
+F 2 "~Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3000 50  0001 C CNN
 F 3 "~" H 9600 3000 50  0001 C CNN
 	1    9600 3000
 	1    0    0    -1  
@@ -790,7 +788,7 @@ U 1 1 5DC9E0D1
 P 9600 3750
 F 0 "RX3" H 9680 3792 50  0000 L CNN
 F 1 "INT" H 9680 3701 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3750 50  0001 C CNN
+F 2 "~Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3750 50  0001 C CNN
 F 3 "~" H 9600 3750 50  0001 C CNN
 	1    9600 3750
 	1    0    0    -1  
@@ -809,7 +807,7 @@ U 1 1 5DCA0F10
 P 9600 3950
 F 0 "TX4" H 9680 3992 50  0000 L CNN
 F 1 "~RST" H 9680 3901 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3950 50  0001 C CNN
+F 2 "~Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3950 50  0001 C CNN
 F 3 "~" H 9600 3950 50  0001 C CNN
 	1    9600 3950
 	1    0    0    -1  
@@ -820,9 +818,85 @@ U 1 1 5DC9E0C9
 P 9600 3550
 F 0 "TX3" H 9680 3592 50  0000 L CNN
 F 1 "~SAFE" H 9680 3501 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3550 50  0001 C CNN
+F 2 "~Connector_Pin:Pin_D1.0mm_L10.0mm" H 9600 3550 50  0001 C CNN
 F 3 "~" H 9600 3550 50  0001 C CNN
 	1    9600 3550
 	1    0    0    -1  
 $EndComp
+Text Label 7000 4800 2    50   ~ 0
+~SAFE
+Text Label 7000 4950 2    50   ~ 0
+INT
+Text Label 6950 5100 2    50   ~ 0
+~RESET
+Text Label 6950 5250 2    50   ~ 0
+PPS
+$Comp
+L Jumper:SolderJumper_2_Bridged JP9
+U 1 1 5E2E4BF9
+P 7300 4800
+F 0 "JP9" H 7400 4850 50  0000 L CNN
+F 1 "~" V 7345 4868 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7300 4800 50  0001 C CNN
+F 3 "~" H 7300 4800 50  0001 C CNN
+	1    7300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP10
+U 1 1 5E2E5126
+P 7300 4950
+F 0 "JP10" H 7050 4900 50  0000 L CNN
+F 1 "~" V 7345 5018 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7300 4950 50  0001 C CNN
+F 3 "~" H 7300 4950 50  0001 C CNN
+	1    7300 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP11
+U 1 1 5E2E7712
+P 7300 5100
+F 0 "JP11" H 7050 5050 50  0000 L CNN
+F 1 "~" V 7345 5168 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7300 5100 50  0001 C CNN
+F 3 "~" H 7300 5100 50  0001 C CNN
+	1    7300 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP12
+U 1 1 5E2E79E5
+P 7300 5250
+F 0 "JP12" H 7050 5200 50  0000 L CNN
+F 1 "~" V 7345 5318 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7300 5250 50  0001 C CNN
+F 3 "~" H 7300 5250 50  0001 C CNN
+	1    7300 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 4800 7150 4800
+Wire Wire Line
+	7000 4950 7150 4950
+Wire Wire Line
+	7150 5100 6950 5100
+Wire Wire Line
+	6950 5250 7150 5250
+Text Label 7650 4950 0    50   ~ 0
+10`
+Wire Wire Line
+	7650 4950 7450 4950
+Text Label 7650 5100 0    50   ~ 0
+9`
+Wire Wire Line
+	7650 5100 7450 5100
+Text Label 7650 5250 0    50   ~ 0
+12
+Text Label 7650 4800 0    50   ~ 0
+11`
+Wire Wire Line
+	7650 4800 7450 4800
+Wire Wire Line
+	7450 5250 7650 5250
 $EndSCHEMATC
